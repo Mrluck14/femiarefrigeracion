@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Femia Refrigeración">
+    <meta name="description" content="Femia Refrigeración, Aire acondicionado, Reparacion, Climatizadores, Mantenimiento"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo-icono.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d67be300cb.js" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.7.0.js"
+  integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+  crossorigin="anonymous"></script>
+    <title>Femia Refrigeración SRL</title>
+</head>
+<body>
+    <header>
+        <div class="container section-nosotros" id="section-nosotros">
+            <nav class="navbar fixed-top container">
+                <img class="logo" src="img/logo-blanco.png" alt="Femia Refrigeración">
+                <div class="navbar-links">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#section-nosotros">Quienes somos</a></li>
+                        <li><a href="#section-servicios">Servicios</a></li>
+                        <li><a href="#footer">Contacto</a></li>
+                    </ul>
+                </div>
+                <img class="icono-menu" id="icono-menu" src="img/barras.png" alt="icon-menu">
+            </nav>
+
+            <div class="row">
+                <div class="col-md-auto col-sm-auto">
+                    <h1 class="title-nosotros">Femia Refrigeración <span>SRL</span></h1>
+                    <div class="linea"></div>
+                    <p class="texto-nosotros">Somos una empresa con
+                    gran experiencia en la reparación de equipos de aire
+                    acondicionado y calefacción, con sede en San Nicolás,
+                    Buenos Aires, Argentina.
+                    Prestamos servicios para pequeñas y grandes empresas
+                    del rubro industrial y comercial de la zona.
+                    Nos caracteriza nuestra integridad y transparencia a la
+                    hora de realizar un trabajo, así como el compromiso
+                    y responsabilidad de nuestros trabajadores.</p>
+                </div>
+                <button class="btn-contacto"data-toggle="modal" data-target="#modalContactForm">Contactarme</button>
+                <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <h4 class="modal-title w-100">Contactarme</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body mx-3">
+                            <form id="form" action="https://formspree.io/f/xeqwyowg" method="POST">
+                                    <div class="md-form mb-5">
+                                    <input name="fullname" type="text" id="input-apenom" class="form-control validate" required placeholder="Nombre y apellido">
+                                    </div>
+
+                                    <div class="md-form mb-5">
+                                    <input name="email" type="email" id="input-email" class="form-control validate" required placeholder="Correo electrónico">
+                                    </div>
+
+                                    <div class="md-form mb-5">
+                                    <input name="subject" type="text" id="input-asunto" class="form-control validate" required placeholder="Asunto">
+                                    </div>
+
+                                    <div class="md-form"> 
+                                    <textarea name="message" type="text" id="input-mensaje" class="md-textarea form-control" required rows="4" placeholder="Mensaje"></textarea>
+                                    </div>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center">
+                                <button class="btn-enviar" type="submit">Enviar</button>
+                            </div>
+                        </form>
+                     </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-servicios" id="section-servicios">
+        <div class="container">
+            <h2 class="title-servicios">Servicios</h2>
+            <p class="subtitle-servicios">Referido a aire acondicionado tipo split y climatizadores centrales.</p>
+            <div class="linea-titulo"></div>
+
+            <div class="row text-center">
+
+                <!-- Team item -->
+                <div class="col-xl-3 col-sm-6 mb-5">
+                    <div class="bg-white rounded shadow-sm py-5 px-4"><img class="card-img mb-3" src="img/img-ventas.png" alt="" width="100">
+                        <h5 class="title-card mb-0">Ventas<br/></h5><br/>
+                        <span class="subtitle-card text-muted">Provisión de equipos que se ajusten a sus necesidades en cantidad y calidad.</span>
+                    </div>
+                </div><!-- End -->
+        
+                <!-- Team item -->
+                <div class="col-xl-3 col-sm-6 mb-5">
+                    <div class="bg-white rounded shadow-sm py-5 px-4"><img class="card-img mb-3" src="img/img-instalacion.png" alt="" width="100"">
+                        <h5 class="title-card mb-0">Instalación <br/></h5><br/>
+                        <span class="subtitle-card text-muted">Colocación y puesta en marcha con materiales de primera calidad.</span>
+                    </div>
+                </div><!-- End -->
+        
+                <!-- Team item -->
+                <div class="col-xl-3 col-sm-6 mb-5">
+                    <div class="bg-white rounded shadow-sm py-5 px-4"><img class="card-img mb-3" src="img/img-reparacion.png" alt="" width="100">
+                        <h5 class="title-card mb-0">Reparación<br/></h5><br/>
+                        <span class="subtitle-card text-muted">Análisis y solución de fallas funcionales.<br/><br/></span>
+                    </div>
+                </div><!-- End -->
+        
+                <!-- Team item -->
+                <div class="col-xl-3 col-sm-6 mb-5">
+                    <div class="bg-white rounded shadow-sm py-5 px-4"><img class="card-img mb-3" src="img/img-mantenimiento.png" alt="" width="100">
+                        <h5 class="title-card mb-0">Mantenimiento<br/></h5><br/>
+                        <span class="subtitle-card text-muted">Revisión periódica, control y corrección de parámetros clave de funcionamiento.</span>
+                    </div>
+                </div><!-- End -->
+            </div>
+        </div>
+    </section>
+    <section class="section-calidad">
+        <div class="container">
+            <h2 class="title-calidad">Calidad y profesionalidad</h2>
+            <div class="linea"></div>
+            <p class="text-calidad">Nos caracterizamos por nuestro
+                profesionalismo, compromiso, responsabilidad y
+                trato distintivo con cada cliente.
+                Los servicios prestados son siempre respaldados
+                por informes de trazabilidad de días, horarios y
+                personal vinculado, acompañado de un plan de
+                acción recomendado a fin de evitar inconvenientes
+                futuros.
+                La larga experiencia, junto con nuestro interés en la
+                mejora continua, la convierten en una gran
+                alternativa para garantizar confiabilidad y
+                durabilidad en los equipos de aclimatación.</p>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <h2 class="title-footer">Información de contacto</h2>
+                    <div class="linea-footer"></div>
+                    <ul class="list-footer">
+                        <li class="mb-3"><img src="img/img-whatsapp.png" alt=""><a href="https://api.whatsapp.com/send?phone=543364028930&text=Hola,%20cómo%20estás?" target="_blank">+54 336 154028930</a></li>
+                        <li class="mb-3"><img src="img/img-email.png" alt=""><a data-toggle="modal" data-target="#modalContactForm" href="">administracion@femiarefrigeracion.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md text-center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3333.5553448665496!2d-60.225888824385976!3d-33.33043847343732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b767927b538101%3A0xb343c6578e872e94!2sSan%20Mart%C3%ADn%20171%2C%20San%20Nicol%C3%A1s%20de%20Los%20Arroyos%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1685483305958!5m2!1ses!2sar" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <ul class="list-footer">
+                        <li>San Martin 171 - San Nicolás, Buenos Aires.</li>
+                    </ul>
+                </div>
+            <p class="text-footer text-center">Pagina web hecha por <a href="https://www.linkedin.com/in/lucasredm" target="_blank">Lucas Rivera</a> © Femia Refrigeración SRL todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="sticky.js"></script>
+    <script src="dropdown.js"></script>
+    <script src="mensaje.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
